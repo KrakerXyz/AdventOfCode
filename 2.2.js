@@ -4,7 +4,7 @@ let aim = 0;
 let horiz = 0;
 let depth = 0;
 
-for (const mov of input) {
+for (const mov of inputs) {
    const [dir, amt] = mov.split(' ').reduce((p, c, i) => { p[i] = i ? parseInt(c) : c, []; return p; }, []);
    switch (dir) {
       case 'down': aim += amt; break;
